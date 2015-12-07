@@ -21,7 +21,7 @@
     ],
     "license": "MIT",
     "require": {
-        "guzzlehttp/guzzle": "v6.1.1"
+        "guzzlehttp/guzzle": "~5.3|~6.0.1|~6.1"
     },
     "autoload": {
          "classmap": ["plivo.php"]
