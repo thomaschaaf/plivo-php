@@ -39,8 +39,10 @@ class RestAPI {
         $url = $this->api.rtrim($path, '/').'/';
 
         $client = new Client([
-            'base_uri' => $url,
-            'auth' => [$this->auth_id, $this->auth_token],
+            'base_url' => $url,
+            'defaults' => [
+                'auth' => [$this->auth_id, $this->auth_token],
+            ],
             'http_errors' => false
         ]);
 
