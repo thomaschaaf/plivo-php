@@ -41,7 +41,7 @@ class RestAPI {
         $client = new Client([
             'base_url' => $url,
             'defaults' => [
-                'auth' => [$this->auth_id, $this->auth_token],
+                'auth' => [$this->auth_id, $this->auth_token]
             ],
             'http_errors' => false
         ]);
@@ -893,6 +893,7 @@ class Dial extends Element {
         'callbackUrl',
         'callbackMethod',
         'digitsMatch',
+        'digitsMatchBLeg',
         'sipHeaders'
    );
 
